@@ -69,8 +69,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 ## Type rfNews() to see new features/changes/bug fixes.</code></pre>
 <p>These two packages run the prediction scheme and contain the random forest algorithm.</p>
 <p>We now laod the training data and the test data.</p>
-<pre class="r"><code>Training &lt;- read.csv(&quot;~/Desktop/DataTrack/MachineLearning/Project/pml-training.csv&quot;)
-Testing&lt;- read.csv(&quot;~/Desktop/DataTrack/MachineLearning/Project/pml-testing.csv&quot;)</code></pre>
+<pre class="r"><code>Training &lt;- read.csv(&quot;http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv&quot;)
+Testing&lt;- read.csv(&quot;http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;)</code></pre>
 <p>The Training and Testing sets have <strong>160</strong> variables, but upon looking at the Testing data I noticed that many of the variables where <strong>NA</strong> for all 20 cases. Since this is the case those variables should not have any bearing on our algorithm, hence those columns will be eliminated. The following code chunk finds all those columns which are entirely <strong>NA</strong> in the Testing data set.</p>
 <pre class="r"><code>names&lt;-c()
 

@@ -17,8 +17,8 @@ These two packages run the prediction scheme and contain the random forest algor
 We now laod the training data and the test data.
 
 ```{r}
-Training <- read.csv("~/Desktop/DataTrack/MachineLearning/Project/pml-training.csv")
-Testing<- read.csv("~/Desktop/DataTrack/MachineLearning/Project/pml-testing.csv")
+Training <- read.csv("http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv")
+Testing<- read.csv("http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv")
 ```
 
 The Training and Testing sets have **160** variables, but upon looking at the Testing data I noticed that many of the variables where **NA** for all 20 cases. Since this is the case those variables should not have any bearing on our algorithm, hence those columns will be eliminated. The following code chunk finds all those columns which are entirely **NA** in the Testing data set.

@@ -1,8 +1,8 @@
 library(caret)
 library(randomForest)
 
-Training <- read.csv("~/Desktop/DataTrack/MachineLearning/Project/pml-training.csv")
-Testing<- read.csv("~/Desktop/DataTrack/MachineLearning/Project/pml-testing.csv")
+Training <- read.csv("http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv")
+Testing<- read.csv("http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv")
 
 names<-c()
 
